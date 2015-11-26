@@ -49,5 +49,7 @@ group :development do
   gem 'haml', '~> 4.0', '>= 4.0.7'
 
   gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+
+  gem 'valid_url', '~> 0.0.4'
 end
 
