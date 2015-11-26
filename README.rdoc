@@ -9,12 +9,14 @@ At present this app has admin capabilities, that means that the user can:
 
 Basically we have implemented the CRUD functionality on the server side to accomplish this funtionality
 
+* Rails version : 4.2.4
 * Ruby version : 2.2.3
 
 
 * Running instructions
 - create a working directory and cd into it
-- git clone https://github.com/sunnythakral/Job-Board-RoR-App
+- use the following command to clone this project into your working directory:
+- git clone <url of this page>
 - cd into the project folder created by the git clone command
 - perform the following commands in your CLI
 
@@ -29,4 +31,7 @@ The commands with install the required gems in the Gemfile, create and initializ
 rails s
 
 This will run the server and now we can go to http://localhost:3000/ on our web browser to view our application's web page.
+
+* Existing bug
+-No validation for the url link attribute at present
 
