@@ -32,6 +32,4 @@ rails s
 
 This will run the server and now we can go to http://localhost:3000/ on our web browser to view our application's web page.
 
-* Existing bug
--No validation for the url link attribute at present
 
