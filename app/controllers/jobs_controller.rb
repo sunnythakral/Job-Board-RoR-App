@@ -1,3 +1,4 @@
+require 'uri'
 class JobsController < ApplicationController
 	before_action :find_job, only: [:show,:edit,:update,:destroy]
 
@@ -48,11 +49,18 @@ class JobsController < ApplicationController
 	private
 
 	def jobs_params
-		params.require(:job).permit(:title,:description,:company,:url, :category_id)
+		params.require(:job).permit(:title,:description,:company,valid?(:url), :category_id)
 	end
 
 	def find_job
 		@job = Job.find(params[:id])
+	end
+
+	def valid?(url)
+  		uri = URI.parse(url)
+  		uri.kind_of?(URI::HTTP)
+	rescue URI::InvalidURIError
+  		false
 	end
 
 end
