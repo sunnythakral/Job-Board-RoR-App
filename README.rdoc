@@ -20,16 +20,16 @@ Basically we have implemented the CRUD functionality on the server side to accom
 - cd into the project folder created by the git clone command
 - perform the following commands in your CLI
 
--bundle install
--rake db:create
--rake db:seed
--rake db: migrate
+* bundle install
+* rake db:create
+* rake db:seed
+* rake db: migrate
 
 The commands with install the required gems in the Gemfile, create and initialize our database according to the model schema in our rails app.
 
 - start the rails server with the following command
 
-rails s
+* rails s
 
 This will run the server and now we can go to http://localhost:3000/ on our web browser to view our application's web page.
 
