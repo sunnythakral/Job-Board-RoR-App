@@ -7,7 +7,7 @@ At present this app has admin capabilities, that means that the user can:
 -delete jobs 
 -view all the jobs or filter viewing the jobs according to the different job categories (Full time, part time, freelance or consulting).
 
-Basically we have implemented the CRUD functionality on the server side to accomplish this funtionality
+Implemented the CRUD functionality on the server side to accomplish these functionalities
 
 * Rails version : 4.2.4
 * Ruby version : 2.2.3
